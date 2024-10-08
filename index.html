@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Steam</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 150px 20px; /* Увеличен верхний отступ */
+            margin: 0; /* Удаляем отступы у body */
+        }
+
+        .left {
+            margin-top: 50px; /* Дополнительный отступ сверху для левой части */
+        }
+
+        .download-button {
+            background-color: #0056b3; /* Тёмно-голубой цвет */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s; /* Плавный переход цвета фона */
+        }
+
+        .download-button:hover {
+            background-color: #0056b3; /* Тёмно-голубой цвет */
+
+            color: white;
+        }
+
+        .source-link {
+            color: #007FFF; /* Темно-голубой цвет */
+            text-decoration: none;
+            margin-left: 10px;
+            font-weight: bold; /* Жирный текст */
+            transition: color 0.3s; /* Плавный переход цвета */
+        }
+
+        .source-link:hover {
+            color: #007FFF; /* Темно-голубой цвет */
+        }
+
+        img {
+            max-width: 150%;
+            height: auto;
+            border: none; /* Убираем обводку */
+            width: 150%; /* Устанавливаем ширину 100% для увеличения */
+            max-height: 200%; /* Ограничиваем максимальную высоту скриншота */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 left">
+                <h1>Simple Steam</h1>
+                <p style="margin-bottom: 20px;">Эта программа предназначена для тех, у кого Steam может тормозить или зависать, а также для любителей минималистичного дизайна. Программа включает функции запуска игр, удаления игр, обновления списка и открытия расположения игры.</p>
+                <div style="display: flex; align-items: center;">
+                    <a href="#" class="download-button">Загрузить</a>
+                    <a href="#" class="source-link">Source</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="screenshot.png" alt="Скриншот программы">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
